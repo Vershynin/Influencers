@@ -1,0 +1,331 @@
+@import "bourbon"
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+@media only screen and (max-width : 1500px)
+
+  .option-group:not(#foo) > input[type="checkbox"] + label
+    padding-left: 2.5vw
+
+  .option-group:not(#foo) > input[type="radio"] + label
+    padding-left: 2.5vw
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .btn-contact
+    display: table
+    float: none
+    clear: both
+    margin: 20px 0 0
+  .btns-wrap
+    display: table
+    margin: 0 auto
+    float: none
+    clear: both
+    width: 311px
+  .option-group:not(#foo) > input[type="checkbox"] + label
+    padding-left: 2.7vw
+
+  .option-group:not(#foo) > input[type="radio"] + label
+    padding-left: 2.7vw
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .top_buttons
+    width: 26.3%
+    li
+      margin-bottom: 10%
+  .option-group:not(#foo) > input[type="checkbox"] + label
+    padding-left: 3.3vw
+
+  .option-group:not(#foo) > input[type="radio"] + label
+    padding-left: 3.3vw
+
+  .footer_contact
+    margin-top: 29vh
+
+
+
+
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+
+    .navb-button
+      background: transparent
+      border: 2px solid #fff
+      color: #fff
+      .icon-bar
+        background: #fff
+
+    .navb-button-redlogo
+      background: transparent
+      border: 2px solid $red
+      color: $red
+      .icon-bar
+        background: $red
+
+    .mainimg
+      float: none
+      display: block
+      width: 100%
+      height: auto
+      margin: 0 auto
+
+    .redlink
+      float: none
+      display: table
+      margin: 0 auto 20px
+
+    .mainsection
+      padding: 4% 0
+      h2
+        width: 100%
+        text-align: center
+    .modal_vacancy
+      div
+        padding: 0
+
+    .option-group:not(#foo) > input[type="radio"] + label
+      padding-left: 4.6vw
+    .table
+      .vacancy_table
+        td
+          white-space: normal
+        //max-width: 300px
+
+      //th
+      //  white-space: normal
+
+    .table-responsive > .table
+      margin-bottom: 20px
+
+    .option-group:not(#foo) > input[type="checkbox"] + label
+      padding-left: 5vw
+
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+  .sectiontext
+    h1
+      font-size: 29px
+  .mainsection .form_header_two
+    font-size: 21px
+
+  .scroll-y
+    min-width: 300px
+
+  .section_description
+    font-size: 19px
+
+  .footer_social li
+    margin-right: 17px
+
+  .sectiontext
+    font-size: 19px
+    line-height: 21px
+    margin-top: 0
+
+  .btn-contact
+    width: 292px
+    font-size: 18px
+    line-height: 30px
+
+  .modal_vacancy
+    div
+      padding: 0
+
+  .vacancy_table
+    td
+      max-width: 300px
+      white-space: normal
+    th
+      white-space: normal
+
+  .table-responsive > .table
+    margin-bottom: 20px
+
+  .select-styled
+    min-width: 231px
+    width: 100%
+
+
+  .insta_textfield input[type="text"]
+    min-width: 231px
+    width: 100%
+
+  .option-group:not(#foo) > input[type="checkbox"] + label
+    padding-left: 6.4vw
+    font-size: 12px
+  .redlink
+    font-size: 14px
+    line-height: 15px
+    max-width: 200px
+    width: 200px
+    &::after
+      right: -18px
+
+  .option-group:not(#foo) > input[type="radio"] + label
+    padding-left: 9.6vw
+
+  .vacancy_headertable, .vacancy_table
+    font-size: 15px
+    thead
+      padding: 0 3px
+      tr
+        th
+          padding: 5px
+          font-size : 15px
+          white-space: normal
+
+  .vacancy_header
+    font-size: 25px
+
+  .apply_link
+    font-size: 15px
+
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+  .sectiontext
+    h1
+      font-size: 29px
+
+  .mainsection
+    h2
+      font-size: 26px
+
+  .redlink
+    font-size: 15px
+    line-height: 16px
+
+  .sectiontext
+    font-size: 25px
+    line-height: 31px
+
+  .mainsection .form_header_two
+    font-size: 21px
+
+  .selectbtn
+    min-width: 300px
+
+  .scroll-y
+    min-width: 300px
+
+  .footer_social li
+    margin-right: 10px
+
+  .sectiontext
+    font-size: 19px
+    line-height: 20px
+    margin-top: 0
+
+  .btn-contact
+    width: 292px
+    font-size: 18px
+    line-height: 30px
+
+  .modal_vacancy
+    div
+      padding: 0
+    h2
+      font-size: 24px
+
+  .vacancy_table
+    td
+      max-width: 300px
+      white-space: normal
+      padding: 5px
+
+
+  .table-responsive > .table
+    margin-bottom: 20px
+
+
+  .select-styled
+    min-width: 231px
+    width: 100%
+
+
+  .insta_textfield input[type="text"]
+    min-width: 231px
+    width: 100%
+
+
+  .redlink
+    font-size: 14px
+    line-height: 15px
+    max-width: 200px
+    width: 200px
+    &::after
+      right: -18px
+
+
+  .vacancy_headertable, .vacancy_table
+    font-size: 15px
+    thead
+      padding: 0 3px
+      tr
+        th
+          padding: 5px
+          font-size : 15px
+          white-space: normal
+
+  .apply_link
+    font-size: 15px
+
+  .vacancy_header
+    font-size: 25px
+
+
+
+  .option-group:not(#foo) > input[type="radio"] + label
+    padding-left: 9.6vw
+
+  .option-group:not(#foo) > input[type="checkbox"] + label
+    font-size: 12px
+
+  .footer_contact
+    margin-top: 8vh
+
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+    /**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
+
+
+
+
+

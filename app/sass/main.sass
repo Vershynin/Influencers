@@ -1,0 +1,753 @@
+@import "bourbon"
+@import "vars"
+@import "libs"
+
+//Custom styles here
+
+.body_redlogo
+  background: #f9fbfb
+
+header
+  position: relative
+  z-index: 3
+  margin-top: 2%
+
+.header_redlogo
+  margin-top: 0
+  background: #fff
+  border-bottom: 1px solid #B2B2B1
+  width: 100%
+
+
+header nav a
+  color: #fff
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size: 14px
+
+.nav_lang
+  text-transform: uppercase
+
+header .nav-redlogo a
+  color: #000206
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size: 14px
+
+
+.section_description
+  font-family: SFCompactTextMedium, sans-serif
+  font-size: 24px
+  color: #fff
+
+.section_singlebutton
+  background: rgba(0,0,0,.0) url("../img/singlebutton_carret.png") no-repeat scroll 191px center
+  background: rgba(0,0,0,.0) url("../img/singlebutton_carret.svg") no-repeat scroll 191px center / 15px 15px
+
+  border: 2px solid #fff
+  border-radius: 4px
+  color: #fff
+  display: table
+  font-family: SFCompactTextMedium, sans-serif
+  font-size: 24px
+  line-height: 36px
+  margin: 10% auto
+  margin: 11vh auto 0
+  padding: 8px 26px 8px 17px
+  text-align: left
+  text-shadow: 0 4px 7px #000307
+  transition: all 0.3s ease 0s
+  width: 230px
+  &:hover
+    background: $red url("../img/singlebutton_carret.svg") no-repeat scroll 191px center / 15px 15px
+    transition: all 0.3s ease 0s
+  &:visited
+    color: #fff
+    text-decoration: none
+  &:active
+    color: #fff
+    text-decoration: none
+  &:link
+    color: #fff
+    text-decoration: none
+
+
+.vacancy_header
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size: 36px
+  color: #000206
+  text-align: center
+  width: 100%
+
+.vacancy_headertable, .vacancy_table
+  border-top: 2px solid #ddd
+  vertical-align: middle
+  font-family: SFCompactTextMedium, sans-serif
+  font-size : 20px
+  color : #4E5057
+  thead
+    tr
+      th
+        padding: 10px 0
+        font-size : 22px
+        color : #000206
+        font-family: SFCompactTextSemibold, sans-serif
+
+
+.vacancy_table
+  border-bottom: 2px solid #ddd
+  td
+    padding: 10px 0 !important
+
+.vacancy_headertable .option-group
+  margin: 20px auto 10px
+  display: table
+  float: none
+  clear: both
+
+.apply_link
+  font-family: SFCompactTextMedium, sans-serif
+  font-size : 20px
+  color : $red
+  &:hover
+    color: #292929
+
+.modal_vacancy
+  ul
+    li
+      list-style: none
+      position: relative
+
+.modal-title
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size: 36px
+  color: #000206
+
+
+//-----------------------------------------------------------------------------
+
+.option-group
+  display: table
+  float: left
+
+.option-group:not(#foo) > input[type='checkbox']
+  opacity: 0
+  filter: alpha(opacity=0)
+  width: 20px
+  height: 20px
+  z-index: 99999
+  position: relative
+  cursor: pointer
+
+
+.option-group:not(#foo) > input[type='checkbox'] + label
+  padding-left: 171px
+  padding-left: 1.6vw
+  background: url("../img/check_a.svg") no-repeat
+  position: relative
+  left: -21px
+  font-family: SFCompactTextMedium, sans-serif
+  font-size: 20px
+  color: #4E5057
+  font-weight: 500
+  cursor: pointer
+  height: 17px
+
+
+.option-group label
+  display: initial
+
+
+
+.option-group:not(#foo) > input[type='checkbox']:checked + label
+  background: url("../img/check_b.svg") no-repeat
+/*-----------------------------exp checkbox---------------------------------------*/
+
+
+.option-group
+  display: table
+  float: left
+
+.option-group:not(#foo) > input[type='radio']
+  opacity: 0
+  filter: alpha(opacity=0)
+  width: 20px
+  height: 20px
+  z-index: 99999
+  position: relative
+  cursor: pointer
+
+
+
+.option-group:not(#foo) > input[type='radio'] + label
+  padding-left: 62px
+  padding-left: 1.6vw
+  background: url("../img/ch_a.svg") no-repeat
+  position: relative
+  left: -21px
+  font-family: SFCompactTextMedium, sans-serif
+  font-size: 20px
+  color: #4E5057
+  font-weight: 500
+  cursor: pointer
+  height: 17px
+
+.option-group label
+  display: initial
+
+.option-group:not(#foo) > input[type='radio']:checked + label
+  background: url("../img/ch_b.svg") no-repeat
+
+.custom_radio
+  float: none
+  clear: both
+  display: table
+  margin: 30px 0
+
+/*-------------------------------------------------------*/
+/*select---custom*/
+
+.select-styled
+  height: 26px
+  -webkit-appearance: none
+  line-height: 1em
+  /* for FF */
+  -moz-appearance: none
+  text-indent: 0.01px
+  text-overflow: ''
+  /* for IE */
+  -ms-appearance: none
+  appearance: none!important
+  background: #f9fbfb url("../img/select_carret.png") no-repeat scroll right center
+
+  border-color: #f9fbfb #f9fbfb #575656
+  border-radius: 0
+  border-style: solid
+  border-width: 1px
+  box-shadow: none
+
+
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size: 16px
+  color: #7C7B7B
+  min-width: 330px
+  width: 46.4%
+
+.select-styled::-ms-expand
+  display: none
+
+.modal-body div
+  //background: #f00
+  //padding: 0 40px
+
+
+//-----------------------------------------------------------------------------
+
+.custom_select
+  width: 100%
+  clear: both
+  float: none
+  margin-bottom: 10%
+
+.selectbtn
+  border-color: #f9fbfb #f9fbfb #575656
+  border-radius: 0
+  border-style: solid
+  border-width: 1px
+  box-shadow: none
+
+  text-align: left
+  background: #f9fbfb url("../img/select_carret.png") no-repeat scroll right center
+
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size: 16px
+  color: #7C7B7B
+  min-width: 330px
+  width: 55%
+
+
+.scroll-y
+  height: 180px
+  min-width: 330px
+
+  width: 57%
+  overflow-y: scroll
+  li
+    a
+      font-family: SFCompactTextMedium, sans-serif
+      font-size: 16px
+      color: #4E5057
+
+
+.scroll-y::-webkit-scrollbar-button
+  background: #fff
+  width: 11px
+  height: 0px
+
+
+.scroll-y::-webkit-scrollbar-track
+  background-color: #fff
+  box-shadow: 0
+
+
+.scroll-y::-webkit-scrollbar-thumb
+  -webkit-border-radius: 0
+  border-radius: 0
+  background-color: $red
+
+
+
+.scroll-y::-webkit-resizer
+  width: 11px
+  height: 0px
+
+
+.scroll-y::-webkit-scrollbar
+  width: 11px
+
+
+.insta_textfield input[type="text"]
+  background: #F9FBFB url("../img/insta_ico.png") no-repeat scroll left center
+
+  border-top: 1px solid #F9FBFB
+  border-bottom: 1px solid #575656
+  border-left: 1px solid #F9FBFB
+  border-right: 1px solid #F9FBFB
+  box-shadow: none
+  border-radius: 0
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size : 16px
+  min-width: 330px
+  width: 47.4%
+  padding-left: 30px
+
+.linkedin_textfield input[type="text"]
+  background: #F9FBFB url("../img/linkedin_ico.png") no-repeat scroll left center
+  border-top: 1px solid #F9FBFB
+  border-bottom: 1px solid #575656
+  border-left: 1px solid #F9FBFB
+  border-right: 1px solid #F9FBFB
+  box-shadow: none
+  border-radius: 0
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size : 16px
+  min-width: 330px
+  width: 47.4%
+  padding-left: 30px
+  margin: 23px 0
+
+
+.custom_textfield input[type="text"], .custom_textfield input[type="email"],  .custom_textfield input[type="tel"]
+  background: #F9FBFB
+  border-top: 1px solid #F9FBFB
+  border-bottom: 1px solid #575656
+  border-left: 1px solid #F9FBFB
+  border-right: 1px solid #F9FBFB
+  border-radius: 0
+  box-shadow: none
+  margin-bottom: 36px
+  padding-left: 0
+
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size : 16px
+
+
+
+.mainsection .form_header
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size: 36px
+  color: #000206
+  margin-bottom: 100px
+
+.mainsection .form_header_two
+  font-family: SFCompactTextSemibold, sans-serif
+  font-size: 25px
+  color: #000206
+  margin-bottom: 15px
+  text-align: left
+
+
+
+.formsubmit
+  font-family: SFCompactTextRegular, sans-serif
+  font-size: 21px
+  color: #FFF
+  text-shadow: 0px 4px 7px rgba(0, 3, 7, 1)
+  background: $red url("../img/contactsubmit.png") no-repeat scroll 200px center
+  width: 230px
+  text-align: left
+  border: 1px solid $red
+  padding: 13px 20px 13px 23px
+  transition: all 0.3s ease 0s
+  &:hover
+    background: #FF0C03 url("../img/contactsubmit.png") no-repeat scroll 200px center
+    transition: all 0.3s ease 0s
+    color: #FFF
+
+
+.logo
+  min-width: 172px
+  max-width: 172px
+
+.section_a
+  height: 62vh
+
+
+
+.staticpage_cont::after
+  background: rgba(0, 0, 0, 0.36) none repeat scroll 0 0
+  content: ""
+  display: block
+  height: 100%
+  left: 0
+  //max-height: 588px
+  position: absolute
+  top: 0
+  width: 100%
+  z-index: 1
+
+.staticpage_cont
+  display: table
+  height: 100%
+  position: relative
+  width: 100%
+
+
+.page_one
+  background: rgba(0, 0, 0, 0) url("../img/file_a.jpg") no-repeat scroll 0 0
+  background-size: cover
+  width: 100%
+  height: 672px
+  height: 35vw
+
+.page_2ai
+  background: rgba(0, 0, 0, 0) url("../img/file_2ai.jpg") no-repeat scroll 0 0
+  background-size: cover
+  width: 100%
+  height: 672px
+  height: 35vw
+
+.page_4ai
+  background: rgba(0, 0, 0, 0) url("../img/file_4ai.jpg") no-repeat scroll 0 0
+  background-size: cover
+  width: 100%
+  height: 672px
+  height: 35vw
+
+.page_contacts
+  background: rgba(0, 0, 0, 0) url("../img/file_contacts.jpg") no-repeat scroll 0 0
+  background-size: cover
+  width: 100%
+  height: 100vh
+
+.btn-contact
+  width: 310px
+  border-radius: 4px
+  color: #fff
+  border: 2px solid #fff
+  background: transparent
+  text-align: left
+  font-family: SFCompactTextMedium, sans-serif
+  font-size : 20px
+  text-shadow : 0px 4px 7px rgba(0, 3, 7, 1)
+  line-height: 36px
+  margin-right: 10px
+  background: rgba(0, 0, 0, 0) url("../img/contact_buttons_carret.svg") no-repeat scroll right center
+  &:hover
+    color: #c5c5c5
+
+.btns-wrap
+  width: auto
+  margin: 5% auto 10%
+  display: table
+
+.sectiontext
+  color: #fff
+  width: 100%
+  text-align: center
+  margin-top: 18%
+  font-family: SFCompactTextMedium, sans-serif
+  font-size: 31px
+  line-height: 37px
+
+.top_buttons
+  margin: 4% auto 0
+  padding: 0
+  width: 42.3%
+  display: table
+  li
+    display: inline-block
+    padding: 5px 0 5px 12px
+    cursor: pointer
+    border-radius: 3px
+    height: 54px
+    line-height: 47px
+    min-width: 181px
+    box-sizing: border-box
+
+
+  .companies_button
+    color: #fff
+    background: $red url("../img/button_triangle_white.svg") no-repeat scroll right center
+    background-size: 16px 16px
+    border-right: 17px solid $red
+    margin-right: 20%
+    transition: all 0.30s ease 0s
+    -webkit-box-shadow: 6px 15px 24px -1px rgba(59,59,59,1)
+    -moz-box-shadow: 6px 15px 24px -1px rgba(59,59,59,1)
+    box-shadow: 6px 15px 24px -1px rgba(59,59,59,1)
+    &:hover
+      color: #fff
+      background: #9F9FA4 url("../img/button_triangle_white.svg") no-repeat scroll right center
+      background-size: 16px 16px
+      border-right: 17px solid #9F9FA4
+      transition: all 0.30s ease 0s
+
+  .influencers_button
+    color: $red
+    background: #fff url("../img/button_triangle_red.svg") no-repeat scroll right center
+    background-size: 16px 16px
+    border-right: 17px solid #fff
+    transition: all 0.30s ease 0s
+    -webkit-box-shadow: 6px 15px 24px -1px rgba(59,59,59,1)
+    -moz-box-shadow: 6px 15px 24px -1px rgba(59,59,59,1)
+    box-shadow: 6px 15px 24px -1px rgba(59,59,59,1)
+    &:hover
+      color: #fff
+      background: #9F9FA4 url("../img/button_triangle_white.svg") no-repeat scroll right center
+      background-size: 16px 16px
+      border-right: 17px solid #9F9FA4
+      transition: all 0.30s ease 0s
+
+.mainsection
+  padding: 2% 0
+  width: 100%
+  h2
+    color: $headerblack
+    font-family: SFCompactTextSemibold, sans-serif
+    font-size: 36px
+
+
+.dropdown .mlang
+  min-width: 63px
+
+.dropdown-menu .current_lang
+  color: #f00
+
+.modal-content
+  margin-top: 10vh
+  padding-top: 30px
+
+.gray
+  background: #F9FBFB
+
+
+.redlink
+  font-family: SFCompactTextBold, sans-serif
+  font-size: 17px
+  text-transform: uppercase
+  line-height: 17px
+  margin: 0 77px 10px 0
+  color: $red
+  position: relative
+  &::after
+    width: 13px
+    content: ""
+    height: 13px
+    position: absolute
+    display: block
+    background: rgba(0, 0, 0, 0) url("../img/triangle_left_red.svg") no-repeat scroll center center
+    right: -50px
+    top: 2px
+
+
+.hands, .communicating
+  max-width: 85%
+  max-height: 85%
+
+  width: 298px
+  height: 298px
+
+  display: block
+
+.communicating
+  float: right
+
+
+.mainmap
+  width: 100%
+  margin-top: 15%
+  margin-top: 6vh
+  display: table
+
+footer
+  width: 100vw
+  height: 200px
+  background: #000
+  color: #fff
+  margin-top: 2%
+
+.footer_contact
+  background: transparent
+  position: relative
+  bottom: 0
+  left: 0
+  height: auto
+  margin-top: 29vh
+  z-index: 3
+
+.modal-dialog
+  position: relative
+  z-index: 2147483647
+
+.footer_social
+  display: table
+  padding: 0
+  margin: 50px auto 10px
+  li
+    list-style: none
+    display: inline-block
+    width: 26px
+    height: 26px
+    margin-right: 30px
+
+    &:last-child
+      margin-right: 0
+
+.modal-content
+  border-radius: 0
+  background-color: #f9fbfb
+  padding: 5% 5% 2%
+
+.modal-header, .modal-footer
+  border: 0 none
+
+.modaltext
+  width: 100%
+  text-align: center
+
+.privacy, .copyright
+  width: 100%
+  text-align: center
+
+.privacy
+  font-family: SFCompactTextMedium, sans-serif
+  font-size: 18px
+
+.copyright
+  font-family: SFCompactTextMedium, sans-serif
+  font-size : 14px
+
+.about_header
+  font-family: SFCompactTextMedium, sans-serif
+  font-size: 36px
+  color: #4E5057
+  width: 100%
+  text-align: center
+  margin-top: 4%
+
+.aboutcont
+  background: #fff
+  padding-bottom: 4%
+  p
+    font-family: SFCompactTextLight, sans-serif
+    font-size: 19px
+    color: #4E5057
+    width: 80%
+    text-align: center
+    margin: 0 auto
+
+.teamcont
+  background: #fff
+  margin-top: 20px
+
+.team_ico
+  width: 155px
+  height: 155px
+  margin: 25px auto 0
+  display: table
+
+.team_name
+  font-family: SFCompactTextBold, sans-serif
+  font-weight: bold
+  font-size: 27px
+  color: #4E5057
+  width: 100%
+  text-align: center
+  margin-top: 10px
+
+.team_descr
+  font-family: SFCompactTextLight, sans-serif
+  font-size: 21px
+  color: #4E5057
+  width: 100%
+  text-align: center
+  margin-bottom: 20%
+
+//-------------input type file-------------------
+
+
+.file-upload
+  position: relative
+  height: 32px
+  width: 100%
+  cursor: pointer
+  line-height: 1.42857143
+  color: #999
+  box-shadow: none
+  font-family: SFCompactTextSemibold,sans-serif
+  font-size: 16px
+
+
+
+.file-upload:after
+  content: "Upload"
+  position: absolute
+  display: block
+  top: 0
+  right: 0
+  z-index: 5
+  background: #f9fbfb none repeat scroll 0 0
+  border-color: #f9fbfb #f9fbfb #575656
+  border-radius: 0
+  border-style: solid
+  border-width: 1px
+  padding: 6px 12px
+  color: $red
+
+
+
+
+
+.file-upload:active:after
+  outline: 0
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125)
+
+
+.file-upload:before
+  content: attr(data-text)
+  position: absolute
+  top: 0
+  left: 0
+  z-index: 3
+  display: block
+  width: calc(100% - 40px)
+  padding: 6px 12px
+  background: #f9fbfb none repeat scroll 0 0
+  border-color: #f9fbfb #f9fbfb #575656
+  border-radius: 0
+  border-style: solid
+  border-width: 1px
+  box-shadow: none
+
+
+.file-upload input
+  position: absolute
+  display: block
+  top: 0
+  height: 100%
+  z-index: 99
+  width: 100%
+  opacity: 0
+
+
+@import "media"
